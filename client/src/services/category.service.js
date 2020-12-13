@@ -1,9 +1,6 @@
-
 import axios from 'axios';
 
-
 class CategoryService {
-
 
     getAllCategories() {
         let url = 'http://localhost:3002/api';
