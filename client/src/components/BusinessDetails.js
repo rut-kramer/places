@@ -10,6 +10,8 @@ import AddReviews from './AddReviews';
 import OpenHours from "./OpenHours";
 import Booking from "./Booking";
 import Contact from './Contact';
+
+import MapContainer  from './GoogleMap'
 function BusinessDetails() {
   return (
     <>
@@ -265,7 +267,6 @@ function BusinessDetails() {
         </div>
         {/* Style Switcher / End */}
       </div>
-
     </>
   );
 }

@@ -19,10 +19,14 @@ function HomePage(props) {
     // console.log(allCategories);
     var arr2 = [];
     // debugger;
-    if (props.category.length > 0) {
-        Object.keys(props.category).forEach(key => arr2.push({ name: key, value: props.category[key] }))
-        console.log("if", arr2)
-    }
+    
+
+    // if (props.category.length > 0) {
+    //     Object.keys(props.category).forEach(key => arr2.push({ name: key, value: props.category[key] }))
+    //     console.log("if", arr2)
+    // }
+
+
     // Header hero text
     let textRotate = function (el, toRotate, period) {
         this.toRotate = toRotate;
@@ -138,7 +142,7 @@ function HomePage(props) {
                                             </div>
                                             <a href="#"><i className="fa fa-map-marker" /></a>
                                         </div>
-                                        <div className="main-search-input-item">
+                                        {/* <div className="main-search-input-item">
                                             <select onChange={(e) => { setSelectedCatgory(e.target.value) }} data-placeholder="All Categories" className="chosen-select">
                                                 {arr2 ?
                                                     arr2.map((option, i) => (
@@ -149,7 +153,7 @@ function HomePage(props) {
                                                     ))
                                                     : ""}
                                             </select>
-                                        </div>
+                                        </div> */}
                                         <button className="button"
                                             onClick={searchClick}
                                         >Search</button>

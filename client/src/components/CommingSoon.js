@@ -5,9 +5,6 @@ import '../css/main-color.css'
 export default function CommingSoon() {
   return (
     <div id="wrapper">
-      {/* Content
-  ================================================== */}
-      {/* Coming Soon Page */}
       <div
         className="coming-soon-page"
         style={{ backgroundImage: "url(images/main-search-background-01.jpg)" }}
@@ -17,9 +14,11 @@ export default function CommingSoon() {
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2">
               <img src="images/logo2.png" alt />
-              <h3>We are launching Listeo soon!</h3>
+              <h3>מגיע בקרוב ... Places</h3>
               {/* Countdown */}
-              <div id="countdown" className="margin-top-10 margin-bottom-35" />
+              <div id="countdown" className="margin-top-10 margin-bottom-35">
+
+              </div>
               {/* Countdown / End */}
               <br />
               <div className="main-search-input gray-style margin-top-30 margin-bottom-10">
@@ -30,7 +29,7 @@ export default function CommingSoon() {
                     defaultValue
                   />
                 </div>
-                <button className="button">Notify Me</button>
+                <button className="button">עדכן אותי</button>
               </div>
             </div>
           </div>
@@ -40,14 +39,4 @@ export default function CommingSoon() {
       {/* Coming Soon Page / End */}
     </div>
   );
-  {
-    /* Wrapper / End */
-  }
-  {
-    /* Scripts
-  ================================================== */
-  }
-  {
-    /* Countdown Script */
-  }
 }

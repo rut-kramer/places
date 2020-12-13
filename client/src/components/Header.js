@@ -25,9 +25,8 @@ function Header(props) {
         <div id="header" className="not-sticky">
           <div className="container">
             <div className="left-side">
-
               <div id="logo">
-                <Link to="/HomePage" class="nav-link"> <a href="index.html"><img src="Your-Logo-here.png" alt /></a></Link>
+                <Link to="/" class="nav-link"> <a href="index.html"><img src="Your-Logo-here.png" alt /></a></Link>
               </div>
               <div className="mmenu-trigger">
                 <button className="hamburger hamburger--collapse" type="button">
@@ -48,13 +47,15 @@ function Header(props) {
             <div className="right-side">
               <div className="header-widget">
                 <label>
-                  <a href="#sign-in-dialog" class="nav-link" class="sign-in popup-with-zoom-anim"
-                    onClick={() => setModalShow(true)}><i class="sl sl-icon-login"></i> כניסה</a>
+                <Link to="/LogIn" class="nav-link"> <a class="nav-link" class="sign-in popup-with-zoom-anim"
+                    // onClick={() => setModalShow(true)}
+                    >
+                      <i class="sl sl-icon-login"></i> כניסה</a></Link>
                 </label>
-                <MyModal
+                {/* <MyModal
                   show={modalShow}
                   onHide={() => setModalShow(false)}
-                />
+                /> */}
               </div>
             </div>
             {/* <div id="sign-in-dialog" className="zoom-anim-dialog mfp-hide"> */}
